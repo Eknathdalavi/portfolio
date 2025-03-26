@@ -1,0 +1,97 @@
+/* General Navbar Styles */
+.navbar {
+  position: fixed;  /* Keep navbar fixed on top */
+  top: 0;
+  left: 0;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px 20px;
+  background-color: var(--navbar-bg);
+  transition: background-color 0.3s ease;
+  z-index: 1000; /* Ensure navbar stays above other elements */
+}
+
+.navbar.dark {
+  background-color: #333;
+  color: white;
+}
+
+.navbar h1 {
+  font-size: 2rem;
+  color: var(--primary-color);
+  font-weight: bold;
+}
+
+/* Navbar Links */
+.nav-links {
+  display: flex;
+  gap: 20px;
+}
+
+.nav-links span {
+  font-size: 1.2rem;
+}
+
+.nav-links a {
+  color: var(--link-color);
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+.nav-links a:hover {
+  color: var(--link-hover-color);
+}
+
+/* Menu Button */
+.menu-btn {
+  display: none;
+  background: none;
+  border: none;
+  font-size: 2rem;
+  cursor: pointer;
+  color: var(--primary-color);
+}
+
+.menu-btn:focus {
+  outline: none;
+}
+
+.dark-mode-btn {
+  background: none;
+  border: none;
+  font-size: 1.5rem;
+  cursor: pointer;
+  color: var(--primary-color);
+}
+
+.dark-mode-btn:focus {
+  outline: none;
+}
+
+/* Mobile View */
+@media (max-width: 768px) {
+  .nav-links {
+    display: flex; /* Always show navbar links */
+    flex-direction: row;
+    gap: 15px;
+  }
+
+  .menu-btn {
+    display: block; /* Show menu button */
+  }
+}
+
+/* Custom Colors */
+:root {
+  --navbar-bg: #f1f1f1;
+  --primary-color: #0013e7;
+  --link-color: #555;
+  --link-hover-color:  #0013e7;
+}
+
+/* Add padding to body so content does not go under navbar */
+body {
+  padding-top: 70px; /* Adjust this to match navbar height */
+}

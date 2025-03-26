@@ -1,0 +1,47 @@
+/* Footer Section */
+.footer {
+  padding: 30px;
+  margin-top: 200px;
+  background-color: #333;
+  color: #fff;
+  text-align: center;
+}
+
+.footer-content {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.footer p {
+  font-size: 1rem;
+  margin-bottom: 15px;
+}
+
+/* Social Media Icons */
+.social-icons {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+}
+
+.social-icon {
+  color: #fff;
+  font-size: 1.5rem;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+.social-icon:hover {
+  color: #007bff; /* Change to blue on hover */
+}
+
+/* For responsive design, ensure it looks good on mobile */
+@media screen and (max-width: 768px) {
+  .social-icons {
+    gap: 15px;
+  }
+
+  .social-icon {
+    font-size: 1.2rem;
+  }
+}

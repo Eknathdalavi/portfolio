@@ -1,0 +1,41 @@
+.tech-icons {
+  display: flex;
+  margin-top: 100px;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+}
+
+.tech-icon {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  font-size: 3rem;
+  margin-bottom: 30px;
+  padding: 10px;
+  border-radius: 15px;
+  background: rgba(255, 255, 255, 0.1); /* Light transparent background */
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2); /* Soft shadow */
+  transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+}
+
+.tech-icon:hover {
+  transform: scale(1.2) rotate(5deg);
+  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.3); /* Stronger shadow on hover */
+}
+
+.tech-icon i {
+  font-size: 5rem; /* Increased icon size */
+  margin-bottom: 15px;
+  text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3); /* Icon shadow */
+}
+
+/* Specific colors for each icon */
+.html i { color: #e34c26; }      /* HTML - Orange */
+.css i { color: #264de4; }       /* CSS - Blue */
+.js i { color: #f7df1e; }        /* JavaScript - Yellow */
+.react i { color: #61dafb; }     /* React - Cyan */
+.node i { color: #68a063; }      /* Node.js - Green */
+.express i { color: #888888; }   /* Express.js - Grey */
+.postman i { color: #ff6c37; }   /* Postman - Orange */
+.mongodb i { color: #4db33d; }   /* MongoDB - Green */

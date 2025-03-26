@@ -1,0 +1,81 @@
+/* App component general styling */
+.App {
+  text-align: center;
+}
+
+
+/* Logo styles */
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+/* Header styling */
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+/* Links color */
+.App-link {
+  color: #61dafb;
+}
+
+/* Keyframe for logo spinning animation */
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+/* Custom h1 styling */
+h1 {
+  color: aqua;
+  background-color: black;
+  text-align: center;
+}
+
+/* Custom image styling (profile image) */
+img {
+  align-items: center;
+  justify-content: center;
+  display: flex;
+  border-radius: 50%;
+}
+
+/* Body background color set to black */
+body {
+  background-color: black;
+  color: white; /* Ensures text remains visible on the black background */
+}
+
+/* Button styling */
+button {
+  background-color: white; /* White background for contrast */
+  color: black; /* Black text */
+  margin: 10px;
+  padding: 10px;
+  border-radius: 50%;
+  border: none; /* Remove default button border */
+  cursor: pointer; /* Change cursor to pointer on hover */
+  transition: background-color 0.3s ease; /* Smooth hover effect */
+}
+
+button:hover {
+  background-color: #61dafb; /* Add hover effect for button */
+}
